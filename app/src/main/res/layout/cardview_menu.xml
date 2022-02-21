@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:text="Menu Name"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvDesctription"
+                android:text="Menu Name"
+                android:layout_below="@id/tvName"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:maxLength="50"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:text="Rp 250000"
+                android:layout_below="@id/tvDesctription"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/btnEdit"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_edit"
+                android:background="@drawable/bg_btn_edit"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_toLeftOf="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_delete"
+                android:background="@drawable/bg_btn_delete"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Resto</string>
+    <string name="url_api">http://192.168.149.224:8080</string>
+</resources>
